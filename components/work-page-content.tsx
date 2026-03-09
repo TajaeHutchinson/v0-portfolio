@@ -11,8 +11,8 @@ const templateDesigns = [
     id: 1,
     title: "Music Production Release/Metadata Tracker",
     description: "Manage song metadata, publishing splits & release timelines",
-    image: "/images/templates/project-dashboard.png",
-    link: "https://notion.so",
+    image: "/images/templates/template-1.jpg",
+    link: "https://www.notion.com/templates/music-production-release-metadata-tracker",
   },
   {
     id: 2,
