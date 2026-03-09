@@ -31,9 +31,9 @@ export function HeroSection() {
         <Image 
           src="/images/eye-icon.png" 
           alt="Work" 
-          width={56} 
-          height={56} 
-          className="w-12 h-12 md:w-14 md:h-14 object-contain"
+          width={80} 
+          height={80} 
+          className="w-16 h-16 md:w-20 md:h-20 object-contain"
         />
       </FloatingNavIcon>
       
