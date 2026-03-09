@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import { FloatingNavIcon } from "./floating-nav-icon"
-import { Wrench, Handshake } from "lucide-react"
+import { Handshake } from "lucide-react"
 
 export function HeroSection() {
   return (
@@ -48,7 +48,13 @@ export function HeroSection() {
       </FloatingNavIcon>
       
       <FloatingNavIcon href="#services" label="Services" position="bottom-right">
-        <Wrench className="w-6 h-6 md:w-8 md:h-8" strokeWidth={1.5} />
+        <Image 
+          src="/images/hand-icon.png" 
+          alt="Services" 
+          width={80} 
+          height={80} 
+          className="w-16 h-16 md:w-20 md:h-20 object-contain"
+        />
       </FloatingNavIcon>
 
       {/* Center Headshot */}
