@@ -56,19 +56,19 @@ const albumCovers = [
     id: 1,
     title: "Album One",
     image: "/images/albums/album-1.jpg",
-    spotifyLink: "https://spotify.com",
+    spotifyLink: "https://open.spotify.com/album/2Ea1wglFrVhGM17qiRgIWH",
   },
   {
     id: 2,
     title: "Album Two",
     image: "/images/albums/album-2.jpg",
-    spotifyLink: "https://spotify.com",
+    spotifyLink: "https://open.spotify.com/album/7mbmlH7tLfOoDqHU0WRaHO",
   },
   {
     id: 3,
     title: "Album Three",
     image: "/images/albums/album-3.jpg",
-    spotifyLink: "https://spotify.com",
+    spotifyLink: "https://open.spotify.com/album/23ovNUV0ar4u22GxL7MKPU",
   },
   {
     id: 4,
