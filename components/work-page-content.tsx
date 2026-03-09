@@ -9,10 +9,10 @@ import { cn } from "@/lib/utils"
 const templateDesigns = [
   {
     id: 1,
-    title: "Project Dashboard",
-    description: "Streamlined project management template",
-    image: "/images/templates/template-1.jpg",
-    link: "#",
+    title: "Music Production Release/Metadata Tracker",
+    description: "Manage song metadata, publishing splits & release timelines",
+    image: "/images/templates/project-dashboard.png",
+    link: "https://notion.so",
   },
   {
     id: 2,
