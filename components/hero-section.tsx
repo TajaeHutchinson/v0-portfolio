@@ -33,7 +33,7 @@ export function HeroSection() {
         />
       </FloatingNavIcon>
       
-      <FloatingNavIcon href="#work" label="Work" position="top-right">
+      <FloatingNavIcon href="/work" label="Work" position="top-right">
         <Image 
           src="/images/eye-icon.png" 
           alt="Work" 
