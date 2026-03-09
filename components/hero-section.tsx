@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import { FloatingNavIcon } from "./floating-nav-icon"
-import { Eye, Wrench, Handshake, Info } from "lucide-react"
+import { Wrench, Handshake, Info } from "lucide-react"
 
 export function HeroSection() {
   return (
@@ -28,7 +28,13 @@ export function HeroSection() {
       </FloatingNavIcon>
       
       <FloatingNavIcon href="#work" label="Work" position="top-right">
-        <Eye className="w-6 h-6 md:w-8 md:h-8" strokeWidth={1.5} />
+        <Image 
+          src="/images/eye-icon.png" 
+          alt="Work" 
+          width={40} 
+          height={40} 
+          className="w-8 h-8 md:w-10 md:h-10 object-contain"
+        />
       </FloatingNavIcon>
       
       <FloatingNavIcon href="#contact" label="Contact" position="bottom-left">
