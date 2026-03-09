@@ -82,7 +82,7 @@ const youtubeVideos = [
   {
     id: 1,
     title: "Music Video 1",
-    embedId: "dQw4w9WgXcQ",
+    embedId: "kmwFGLN0tzc",
   },
   {
     id: 2,
