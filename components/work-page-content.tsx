@@ -54,19 +54,19 @@ const templateDesigns = [
 const albumCovers = [
   {
     id: 1,
-    title: "Album One",
+    title: "Trance & Study: Sync Experience (Vol.1)",
     image: "/images/albums/album-1.jpg",
     spotifyLink: "https://open.spotify.com/album/2Ea1wglFrVhGM17qiRgIWH",
   },
   {
     id: 2,
-    title: "Album Two",
+    title: "Trance & Study: Sync Experience (Vol.2)",
     image: "/images/albums/album-2.jpg",
     spotifyLink: "https://open.spotify.com/album/7mbmlH7tLfOoDqHU0WRaHO",
   },
   {
     id: 3,
-    title: "Album Three",
+    title: "Trance & Study: Sync Experience (Vol.3)",
     image: "/images/albums/album-3.jpg",
     spotifyLink: "https://open.spotify.com/album/23ovNUV0ar4u22GxL7MKPU",
   },
