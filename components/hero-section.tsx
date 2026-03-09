@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import { FloatingNavIcon } from "./floating-nav-icon"
-import { Handshake } from "lucide-react"
+
 
 export function HeroSection() {
   return (
@@ -44,7 +44,13 @@ export function HeroSection() {
       </FloatingNavIcon>
       
       <FloatingNavIcon href="#contact" label="Contact" position="bottom-left">
-        <Handshake className="w-6 h-6 md:w-8 md:h-8" strokeWidth={1.5} />
+        <Image 
+          src="/images/contact-icon.png" 
+          alt="Contact" 
+          width={80} 
+          height={80} 
+          className="w-16 h-16 md:w-20 md:h-20 object-contain"
+        />
       </FloatingNavIcon>
       
       <FloatingNavIcon href="#services" label="Services" position="bottom-right">
