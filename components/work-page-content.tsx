@@ -16,10 +16,10 @@ const templateDesigns = [
   },
   {
     id: 2,
-    title: "Content Calendar",
-    description: "Plan and schedule your content effortlessly",
+    title: "Creative Digital Release Tracker",
+    description: "Coordinate digital projects across platforms",
     image: "/images/templates/template-2.jpg",
-    link: "#",
+    link: "/work/creative-digital-release-tracker",
   },
   {
     id: 3,
