@@ -54,27 +54,31 @@ const templateDesigns = [
 const albumCovers = [
   {
     id: 1,
-    title: "Trance & Study: Sync Experience (Vol.1)",
+    title: "Don't Tap The Glass",
     image: "/images/albums/album-1.jpg",
-    spotifyLink: "https://open.spotify.com/album/2Ea1wglFrVhGM17qiRgIWH",
+    spotifyLink: "https://open.spotify.com/album/23ovNUV0ar4u22GxL7MKPU",
+    comingSoon: false,
   },
   {
     id: 2,
     title: "Trance & Study: Sync Experience (Vol.2)",
     image: "/images/albums/album-2.jpg",
-    spotifyLink: "https://open.spotify.com/album/7mbmlH7tLfOoDqHU0WRaHO",
+    spotifyLink: "https://open.spotify.com/album/2Ea1wglFrVhGM17qiRgIWH",
+    comingSoon: false,
   },
   {
     id: 3,
     title: "Trance & Study: Sync Experience (Vol.3)",
     image: "/images/albums/album-3.jpg",
-    spotifyLink: "https://open.spotify.com/album/23ovNUV0ar4u22GxL7MKPU",
+    spotifyLink: "https://open.spotify.com/album/7mbmlH7tLfOoDqHU0WRaHO",
+    comingSoon: false,
   },
   {
     id: 4,
-    title: "Album Four",
+    title: "Trance & Study: Sync Experience (Vol.1)",
     image: "/images/albums/album-4.jpg",
-    spotifyLink: "https://spotify.com",
+    spotifyLink: "",
+    comingSoon: true,
   },
 ]
 
@@ -234,6 +238,28 @@ function TemplateCard({ template }: { template: typeof templateDesigns[0] }) {
 }
 
 function AlbumCard({ album }: { album: typeof albumCovers[0] }) {
+  if (album.comingSoon) {
+    return (
+      <div
+        className="group relative block aspect-square rounded-lg overflow-hidden bg-white/5 border border-white/10 hover:border-purple-500/50 transition-all duration-300 cursor-default"
+      >
+        <Image
+          src={album.image}
+          alt={album.title}
+          fill
+          className="object-cover transition-transform duration-500 group-hover:scale-110"
+        />
+        
+        {/* Coming Soon Overlay */}
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-colors duration-300 flex items-center justify-center">
+          <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-5 py-2.5 bg-purple-600/80 rounded-full text-sm font-medium text-white tracking-wider uppercase">
+            Coming Soon
+          </span>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <a
       href={album.spotifyLink}
