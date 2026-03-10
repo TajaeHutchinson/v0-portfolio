@@ -28,27 +28,6 @@ const templateDesigns = [
     image: "/images/templates/template-3.jpg",
     link: "/work/ai-devops-tracker-lite",
   },
-  {
-    id: 4,
-    title: "Habit Tracker",
-    description: "Build better habits with daily tracking",
-    image: "/images/templates/template-4.jpg",
-    link: "#",
-  },
-  {
-    id: 5,
-    title: "Reading List",
-    description: "Track and organize your reading journey",
-    image: "/images/templates/template-5.jpg",
-    link: "#",
-  },
-  {
-    id: 6,
-    title: "Goal Planner",
-    description: "Set and achieve your goals systematically",
-    image: "/images/templates/template-6.jpg",
-    link: "#",
-  },
 ]
 
 const albumCovers = [
