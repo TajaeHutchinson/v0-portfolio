@@ -23,10 +23,10 @@ const templateDesigns = [
   },
   {
     id: 3,
-    title: "Finance Tracker",
-    description: "Keep your finances organized and clear",
+    title: "AI DevOps Tracker: Lite",
+    description: "Structural framework for AI builders",
     image: "/images/templates/template-3.jpg",
-    link: "#",
+    link: "/work/ai-devops-tracker-lite",
   },
   {
     id: 4,
