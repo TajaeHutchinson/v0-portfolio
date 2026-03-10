@@ -54,31 +54,31 @@ const templateDesigns = [
 const albumCovers = [
   {
     id: 1,
+    title: "Trance & Study: Sync Experience (Vol.1)",
+    image: "/images/albums/album-4.jpg",
+    spotifyLink: "",
+    comingSoon: true,
+  },
+  {
+    id: 2,
     title: "Don't Tap The Glass",
     image: "/images/albums/album-1.jpg",
     spotifyLink: "https://open.spotify.com/album/23ovNUV0ar4u22GxL7MKPU",
     comingSoon: false,
   },
   {
-    id: 2,
+    id: 3,
     title: "Trance & Study: Sync Experience (Vol.2)",
     image: "/images/albums/album-2.jpg",
     spotifyLink: "https://open.spotify.com/album/2Ea1wglFrVhGM17qiRgIWH",
     comingSoon: false,
   },
   {
-    id: 3,
+    id: 4,
     title: "Trance & Study: Sync Experience (Vol.3)",
     image: "/images/albums/album-3.jpg",
     spotifyLink: "https://open.spotify.com/album/7mbmlH7tLfOoDqHU0WRaHO",
     comingSoon: false,
-  },
-  {
-    id: 4,
-    title: "Trance & Study: Sync Experience (Vol.1)",
-    image: "/images/albums/album-4.jpg",
-    spotifyLink: "",
-    comingSoon: true,
   },
 ]
 
