@@ -22,63 +22,42 @@ export function FloatingNavIcon({ href, label, position, children }: FloatingNav
   }
 
   const labelPositionClasses = {
-    "top-left": "top-full left-1/2 -translate-x-1/2 mt-3",
-    "top-right": "top-full left-1/2 -translate-x-1/2 mt-3",
-    "bottom-left": "bottom-full left-1/2 -translate-x-1/2 mb-3",
-    "bottom-right": "bottom-full left-1/2 -translate-x-1/2 mb-3",
+    "top-left": "top-full left-1/2 -translate-x-1/2 mt-2",
+    "top-right": "top-full left-1/2 -translate-x-1/2 mt-2",
+    "bottom-left": "bottom-full left-1/2 -translate-x-1/2 mb-2",
+    "bottom-right": "bottom-full left-1/2 -translate-x-1/2 mb-2",
   }
 
   return (
     <Link
       href={href}
-      className={cn(
-        "absolute z-10 group",
-        positionClasses[position]
-      )}
+      className={cn("absolute z-10", positionClasses[position])}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {/* Animated ring */}
-      <div className="relative">
+      <div className="relative flex flex-col items-center">
+        {/* Icon — no border, just rotate on hover */}
         <div
-          className={cn(
-            "absolute inset-0 rounded-full border border-primary/30 transition-all duration-500",
-            isHovered ? "scale-150 opacity-0" : "scale-100 opacity-100"
-          )}
-        />
-        <div
-          className={cn(
-            "absolute inset-0 rounded-full border border-primary/20 transition-all duration-700 delay-100",
-            isHovered ? "scale-[1.8] opacity-0" : "scale-100 opacity-0"
-          )}
-        />
-        
-        {/* Main icon circle */}
-        <div
-          className={cn(
-            "relative w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center",
-            "border-2 border-primary/40 bg-card/50 backdrop-blur-sm",
-            "transition-all duration-300 ease-out",
-            "hover:border-primary hover:bg-primary/10 hover:scale-110",
-            "cursor-pointer"
-          )}
+          className="transition-transform ease-in-out"
+          style={{
+            transform: isHovered ? "rotate(360deg)" : "rotate(0deg)",
+            transitionDuration: "0.5s",
+          }}
         >
-          <div className="text-foreground/70 group-hover:text-primary transition-colors duration-300">
-            {children}
-          </div>
+          {children}
         </div>
 
         {/* Label */}
         <span
           className={cn(
-            "absolute whitespace-nowrap text-sm md:text-base font-medium tracking-wide",
-            "transition-all duration-300 ease-out",
+            "absolute whitespace-nowrap text-sm md:text-base font-medium tracking-wide text-primary",
+            "transition-all duration-300 ease-out pointer-events-none",
             labelPositionClasses[position],
-            isHovered 
-              ? "opacity-100 translate-y-0" 
+            isHovered
+              ? "opacity-100 translate-y-0"
               : "opacity-0 translate-y-2"
           )}
-          style={{ fontFamily: 'var(--font-handwritten)' }}
+          style={{ fontFamily: "var(--font-handwritten)" }}
         >
           {label}
         </span>

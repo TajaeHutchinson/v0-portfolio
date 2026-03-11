@@ -5,10 +5,10 @@ import Link from "next/link"
 import { cn } from "@/lib/utils"
 
 const menuItems = [
-  { label: "Work", href: "/work" },
+  { label: "Music", href: "/music" },
   { label: "Services", href: "/services" },
-  { label: "About", href: "#about" },
-  { label: "Contact", href: "#contact" },
+  { label: "Templates", href: "#templates" },
+  { label: "Contact", href: "/contact" },
 ]
 
 export function HamburgerMenu() {

@@ -2,11 +2,12 @@
 
 import Image from "next/image"
 import { FloatingNavIcon } from "./floating-nav-icon"
+import { AboutSection } from "./about-section"
 
 
 export function HeroSection() {
   return (
-    <section className="relative w-full h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative w-full min-h-screen flex flex-col items-center justify-center overflow-hidden py-20">
       {/* Subtle background gradient */}
       <div className="absolute inset-0 bg-gradient-radial from-primary/5 via-transparent to-transparent" />
       
@@ -23,33 +24,33 @@ export function HeroSection() {
       />
 
       {/* Floating Navigation Icons */}
-      <FloatingNavIcon href="#about" label="About" position="top-left">
+      <FloatingNavIcon href="#templates" label="Templates" position="top-left">
         <Image 
           src="/images/brain-icon.png" 
-          alt="About" 
-          width={80} 
-          height={80} 
-          className="w-16 h-16 md:w-20 md:h-20 object-contain"
+          alt="Templates" 
+          width={104} 
+          height={104} 
+          className="w-20 h-20 md:w-26 md:h-26 object-contain"
         />
       </FloatingNavIcon>
       
-      <FloatingNavIcon href="/work" label="Work" position="top-right">
+      <FloatingNavIcon href="/music" label="Music" position="top-right">
         <Image 
           src="/images/eye-icon.png" 
-          alt="Work" 
-          width={80} 
-          height={80} 
-          className="w-16 h-16 md:w-20 md:h-20 object-contain"
+          alt="Music" 
+          width={104} 
+          height={104} 
+          className="w-20 h-20 md:w-26 md:h-26 object-contain"
         />
       </FloatingNavIcon>
       
-      <FloatingNavIcon href="#contact" label="Contact" position="bottom-left">
+      <FloatingNavIcon href="/contact" label="Contact" position="bottom-left">
         <Image 
           src="/images/contact-icon.png" 
           alt="Contact" 
-          width={80} 
-          height={80} 
-          className="w-16 h-16 md:w-20 md:h-20 object-contain"
+          width={104} 
+          height={104} 
+          className="w-20 h-20 md:w-26 md:h-26 object-contain"
         />
       </FloatingNavIcon>
       
@@ -57,9 +58,9 @@ export function HeroSection() {
         <Image 
           src="/images/hand-icon.png" 
           alt="Services" 
-          width={80} 
-          height={80} 
-          className="w-16 h-16 md:w-20 md:h-20 object-contain"
+          width={104} 
+          height={104} 
+          className="w-20 h-20 md:w-26 md:h-26 object-contain"
         />
       </FloatingNavIcon>
 
@@ -87,19 +88,15 @@ export function HeroSection() {
           <div className="absolute inset-0 bg-gradient-to-t from-background/30 via-transparent to-transparent" />
         </div>
 
-        {/* Name label (optional decorative) */}
-        <div className="absolute -bottom-12 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-          <span 
-            className="text-lg text-muted-foreground tracking-widest"
-            style={{ fontFamily: 'var(--font-handwritten)' }}
-          >
-            Creative
-          </span>
-        </div>
+      </div>
+
+      {/* About Section */}
+      <div className="mt-16">
+        <AboutSection />
       </div>
 
       {/* Bottom scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40 animate-bounce">
+      <div className="mt-16 flex flex-col items-center gap-2 opacity-40 animate-bounce">
         <span className="text-xs tracking-widest uppercase text-muted-foreground">Scroll</span>
         <div className="w-px h-8 bg-gradient-to-b from-muted-foreground to-transparent" />
       </div>
