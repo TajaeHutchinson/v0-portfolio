@@ -9,55 +9,76 @@ import { HamburgerMenu } from "./hamburger-menu"
 const services = [
   {
     id: 1,
-    title: "Notion Template Design",
-    description: "Custom Notion templates and database architectures tailored to your creative workflow. Perfect for content creators, musicians, and digital entrepreneurs.",
+    title: "Done-for-You Template Customization",
+    description: "I'll set up and customize one of my existing Notion templates for your exact workflow. Includes data migration (up to 100 rows), personalization, and 48-hour support.",
     features: [
-      "Custom database schemas",
-      "Workflow automation",
-      "Multi-platform integration",
-      "Ongoing support & updates"
+      "Template setup & customization",
+      "Data migration (up to 100 rows)",
+      "Personalization & branding",
+      "48-hour email support"
     ],
-    price: "Starting at $500",
+    price: "Starting at $225",
+    link: "https://www.notion.so/DONE-FOR-YOU-TEMPLATE-CUSTOMIZATION-306390d5ccca8076a4fcdb9b0207e8b5?source=copy_link",
     image: "/images/templates/template-1.jpg"
   },
   {
     id: 2,
-    title: "Systems Design Consulting",
-    description: "Strategic planning and implementation of creative systems that scale. Transform chaotic processes into streamlined, repeatable workflows.",
+    title: "Custom Workflow Design (Simple)",
+    description: "Custom-built Notion workflow designed for your specific needs. Perfect for solopreneurs and small teams who need a tailored system.",
     features: [
-      "Workflow audit & analysis",
-      "Custom system architecture",
-      "Team training & onboarding",
-      "3-month implementation support"
+      "1 custom database",
+      "3 views per database",
+      "Basic automations",
+      "Data migration (up to 200 rows)",
+      "Training session"
     ],
-    price: "Starting at $2,000",
+    price: "Starting at $375",
+    link: "https://www.notion.so/CUSTOM-TEMPLATE-BUILD-SIMPLE-303390d5ccca80e09b89c3ccb4e488d8?source=copy_link",
     image: "/images/templates/carousel-1.png"
   },
   {
     id: 3,
-    title: "Music Release Management",
-    description: "End-to-end release coordination for independent artists. From metadata tracking to multi-platform distribution strategy.",
+    title: "Custom Workflow Design (Advanced)",
+    description: "Complex custom systems with integrations and advanced automation. For teams scaling their operations.",
     features: [
-      "Release timeline planning",
-      "Metadata management",
-      "Distribution coordination",
-      "Campaign tracking"
+      "3 custom databases",
+      "5 views per database",
+      "1 external integration",
+      "Advanced automations",
+      "Data migration (up to 300 rows)",
+      "Training + documentation"
     ],
-    price: "Custom pricing",
+    price: "Starting at $750",
+    link: "https://www.notion.so/CUSTOM-TEMPLATE-BUILD-ADVANCED-305390d5ccca8099a15ce49533242a7d?source=copy_link",
     image: "/images/albums/album-2.jpg"
   },
   {
     id: 4,
-    title: "Creative Project Management",
-    description: "Hands-on project management for creative teams. Keep your projects on track with tailored PM solutions for artists and creators.",
+    title: "Workflow Audit",
+    description: "I'll analyze your current systems, identify bottlenecks, and provide a detailed optimization plan with actionable recommendations.",
     features: [
-      "Sprint planning & execution",
-      "Stakeholder communication",
-      "Deliverable tracking",
-      "Post-project optimization"
+      "Current workflow analysis",
+      "Bottleneck identification",
+      "Optimization recommendations",
+      "Implementation roadmap"
     ],
-    price: "Starting at $1,500/month",
+    price: "$550",
+    link: "https://www.notion.so/WORKFLOW-AUDIT-OPTIMIZATION-ROADMAP-305390d5ccca80e2a7f9c4ad495f00ee?source=copy_link",
     image: "/images/templates/carousel-2.png"
+  },
+  {
+    id: 5,
+    title: "Fractional Operations Consulting",
+    description: "Ongoing support for growing teams. Monthly strategy sessions, continuous optimization, and dedicated Slack/email support.",
+    features: [
+      "2 strategy sessions per month",
+      "Continuous workflow optimization",
+      "Priority Slack/email support",
+      "Monthly performance reviews"
+    ],
+    price: "Starting at $1,250/month",
+    link: "https://www.notion.so/RETAINER-WORKFLOW-CONSULTING-303390d5ccca801e9ef9ee0281642fd8?source=copy_link",
+    image: "/images/templates/carousel-3.png"
   }
 ]
 
@@ -106,7 +127,7 @@ export function ServicesPageContent() {
       {/* Services Grid */}
       <section className="py-16 px-6">
         <div className="container mx-auto max-w-7xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <ServiceCard key={service.id} service={service} index={index} />
             ))}
@@ -125,7 +146,9 @@ export function ServicesPageContent() {
             that works for you.
           </p>
           <a
-            href="#contact"
+            href="https://calendly.com/tajae-hut/30-minute-meeting-clone?month=2026-03"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-full font-medium tracking-wide hover:bg-primary/90 transition-all duration-300 hover:scale-105"
           >
             Get in Touch
@@ -180,15 +203,17 @@ function ServiceCard({ service, index }: { service: typeof services[0], index: n
           ))}
         </div>
 
-        {/* Price */}
+        {/* Price & CTA */}
         <div className="flex items-center justify-between pt-6 border-t border-border/50">
           <span className="text-lg font-medium text-primary">{service.price}</span>
-          <button
-            onClick={() => setIsExpanded(!isExpanded)}
+          <a
+            href={service.link}
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-sm tracking-wider uppercase text-muted-foreground hover:text-primary transition-colors"
           >
             Learn More →
-          </button>
+          </a>
         </div>
       </div>
 
