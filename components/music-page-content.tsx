@@ -122,9 +122,12 @@ export function MusicPageContent() {
       {/* Section 1: Trance & Study */}
       <section className="min-h-screen flex flex-col justify-center px-6 py-24 bg-gradient-to-b from-[#0A0E27] to-[#1a1f3a] pt-32">
         <div className="max-w-6xl mx-auto w-full">
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center">
             Trance & Study
           </h2>
+          <p className="text-xl text-white/70 mb-12 text-center">
+            Experimental soundscapes and visual storytelling
+          </p>
           
           {/* Album Grid */}
           <div className="grid grid-cols-2 gap-4 md:gap-6 mb-12">
@@ -153,7 +156,7 @@ export function MusicPageContent() {
           {/* CTA */}
           <div className="text-center">
             <a
-              href="https://open.spotify.com/artist/YOUR_ARTIST_ID"
+              href="https://open.spotify.com/artist/2bU38jZ09FflRQ37LL5ROa"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-3 bg-purple-600 hover:bg-purple-700 text-white font-medium rounded-full transition-colors"
@@ -164,40 +167,67 @@ export function MusicPageContent() {
         </div>
       </section>
 
-      {/* Section 2: TheGlassEyeFrill */}
-      <section className="min-h-screen flex flex-col justify-center px-6 py-24 bg-gradient-to-b from-[#2D1B3D] to-[#4A2B5C]">
-        <div className="max-w-6xl mx-auto w-full text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            TheGlassEyeFrill
+      {/* Section 2: TheGlassEyeFill */}
+      <section className="relative min-h-screen flex flex-col justify-center px-6 py-24 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/glasseyefill/background.jpg"
+            alt="Background"
+            fill
+            className="object-cover opacity-40"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-purple-900/40 to-black/80" />
+        </div>
+
+        <div className="relative z-10 max-w-6xl mx-auto w-full text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-12">
+            TheGlassEyeFill
           </h2>
-          <p className="text-xl text-white/70 mb-12">
-            Experimental soundscapes and visual storytelling
-          </p>
           
           {/* Album Covers Row */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mb-12 max-w-4xl mx-auto">
-            <div className="aspect-square rounded-lg overflow-hidden bg-white/5 border border-white/10">
-              <div className="w-full h-full flex items-center justify-center text-white/30">
-                Album Cover 1
-              </div>
+            <div className="aspect-square rounded-lg overflow-hidden border border-white/20 shadow-2xl">
+              <Image
+                src="/images/glasseyefill/cover-1.jpg"
+                alt="Album Cover 1"
+                width={400}
+                height={400}
+                className="w-full h-full object-cover"
+              />
             </div>
-            <div className="aspect-square rounded-lg overflow-hidden bg-white/5 border border-white/10">
-              <div className="w-full h-full flex items-center justify-center text-white/30">
-                Album Cover 2
-              </div>
+            <div className="aspect-square rounded-lg overflow-hidden border border-white/20 shadow-2xl">
+              <Image
+                src="/images/glasseyefill/cover-2.jpg"
+                alt="Album Cover 2"
+                width={400}
+                height={400}
+                className="w-full h-full object-cover"
+              />
             </div>
-            <div className="aspect-square rounded-lg overflow-hidden bg-white/5 border border-white/10 hidden md:block">
-              <div className="w-full h-full flex items-center justify-center text-white/30">
-                Album Cover 3
-              </div>
+            <div className="aspect-square rounded-lg overflow-hidden border border-white/20 shadow-2xl hidden md:block">
+              <Image
+                src="/images/glasseyefill/cover-3.jpg"
+                alt="Album Cover 3"
+                width={400}
+                height={400}
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 
-          {/* Spotify Embed Placeholder */}
-          <div className="max-w-2xl mx-auto mb-8 aspect-video rounded-lg overflow-hidden border border-white/10 bg-white/5">
-            <div className="w-full h-full flex items-center justify-center text-white/30">
-              Spotify Embed Placeholder
-            </div>
+          {/* Spotify Embed */}
+          <div className="max-w-2xl mx-auto mb-8">
+            <iframe
+              style={{ borderRadius: "12px" }}
+              src="https://open.spotify.com/embed/artist/2bU38jZ09FflRQ37LL5ROa?utm_source=generator"
+              width="100%"
+              height="352"
+              frameBorder="0"
+              allowFullScreen
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            />
           </div>
 
           {/* CTA */}
