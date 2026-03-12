@@ -9,9 +9,7 @@ export function AboutSection() {
       
       <AnimatedTagline />
       
-      <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-        I build systems for creators. Workflow design for solopreneurs, Notion templates for musicians, and soundscapes for films. Based in NYC.
-      </p>
+      
     </div>
   )
 }

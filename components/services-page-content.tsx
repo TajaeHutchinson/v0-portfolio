@@ -19,7 +19,7 @@ const services = [
     ],
     price: "Starting at $225",
     link: "https://www.notion.so/DONE-FOR-YOU-TEMPLATE-CUSTOMIZATION-306390d5ccca8076a4fcdb9b0207e8b5?source=copy_link",
-    image: "/images/templates/template-1.jpg"
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1-zk4ApnzrUe8CEPWeIldMtvECvDHoKL.png"
   },
   {
     id: 2,
@@ -34,7 +34,7 @@ const services = [
     ],
     price: "Starting at $375",
     link: "https://www.notion.so/CUSTOM-TEMPLATE-BUILD-SIMPLE-303390d5ccca80e09b89c3ccb4e488d8?source=copy_link",
-    image: "/images/templates/carousel-1.png"
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2-I1rY94vynJ8ISSUixF5Og9lW93NXrz.png"
   },
   {
     id: 3,
@@ -50,7 +50,7 @@ const services = [
     ],
     price: "Starting at $750",
     link: "https://www.notion.so/CUSTOM-TEMPLATE-BUILD-ADVANCED-305390d5ccca8099a15ce49533242a7d?source=copy_link",
-    image: "/images/albums/album-2.jpg"
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/3-bdXiZ5UGA9nxtJyftJfoMe8WZUE6UI.png"
   },
   {
     id: 4,
@@ -64,7 +64,7 @@ const services = [
     ],
     price: "$550",
     link: "https://www.notion.so/WORKFLOW-AUDIT-OPTIMIZATION-ROADMAP-305390d5ccca80e2a7f9c4ad495f00ee?source=copy_link",
-    image: "/images/templates/carousel-2.png"
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/6-BjwbbJP8jBoegenYxQ6QS3Pll5kM6R.png"
   },
   {
     id: 5,
@@ -78,7 +78,7 @@ const services = [
     ],
     price: "Starting at $1,250/month",
     link: "https://www.notion.so/RETAINER-WORKFLOW-CONSULTING-303390d5ccca801e9ef9ee0281642fd8?source=copy_link",
-    image: "/images/templates/carousel-3.png"
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/4-PiKZs6BQptY1YHXbBiEBFnq7JgHK67.png"
   },
   {
     id: 6,
@@ -93,7 +93,7 @@ const services = [
     ],
     price: "$375-650",
     link: "https://www.notion.so/PRESENTATION-DESIGN-STORYTELLING-305390d5ccca803b8a23cdeaed96b374?source=copy_link",
-    image: "/images/templates/carousel-4.png"
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/5-VgKIVYvmJUspMBsLaFYIPmji0K3sWb.png"
   }
 ]
 
