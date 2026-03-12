@@ -122,9 +122,9 @@ export function MusicPageContent() {
             src="/images/trancestudy/background.jpg"
             alt="Background"
             fill
-            className="object-cover opacity-10"
+            className="object-cover opacity-50"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-[#0A0E27]/60 to-[#1a1f3a]/80" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-[#0A0E27]/30 to-[#1a1f3a]/50" />
         </div>
 
         <div className="relative z-10 max-w-6xl mx-auto w-full text-center">
