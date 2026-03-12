@@ -79,6 +79,21 @@ const services = [
     price: "Starting at $1,250/month",
     link: "https://www.notion.so/RETAINER-WORKFLOW-CONSULTING-303390d5ccca801e9ef9ee0281642fd8?source=copy_link",
     image: "/images/templates/carousel-3.png"
+  },
+  {
+    id: 6,
+    title: "Presentation Design",
+    description: "Custom-designed presentations for pitches, reports, and client deliverables. Transform your ideas into polished, professional decks.",
+    features: [
+      "Custom slide design (10-30 slides)",
+      "Brand-aligned templates",
+      "Visual data storytelling",
+      "Editable source files",
+      "One round of revisions"
+    ],
+    price: "$375-650",
+    link: "https://www.notion.so/PRESENTATION-DESIGN-STORYTELLING-305390d5ccca803b8a23cdeaed96b374?source=copy_link",
+    image: "/images/templates/carousel-4.png"
   }
 ]
 
