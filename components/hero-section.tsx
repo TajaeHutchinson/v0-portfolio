@@ -24,7 +24,7 @@ export function HeroSection() {
       />
 
       {/* Floating Navigation Icons */}
-      <FloatingNavIcon href="#templates" label="Templates" position="top-left">
+      <FloatingNavIcon href="/templates" label="Templates" position="top-left">
         <Image 
           src="/images/brain-icon.png" 
           alt="Templates" 
