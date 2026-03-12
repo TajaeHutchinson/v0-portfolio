@@ -115,8 +115,19 @@ export function MusicPageContent() {
       </header>
 
       {/* Section 1: Trance & Study */}
-      <section className="min-h-screen flex flex-col justify-center px-6 py-24 bg-gradient-to-b from-[#0A0E27] to-[#1a1f3a] pt-32">
-        <div className="max-w-6xl mx-auto w-full text-center">
+      <section className="relative min-h-screen flex flex-col justify-center px-6 py-24 overflow-hidden pt-32">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/trancestudy/background.jpg"
+            alt="Background"
+            fill
+            className="object-cover opacity-30"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-[#0A0E27]/60 to-[#1a1f3a]/80" />
+        </div>
+
+        <div className="relative z-10 max-w-6xl mx-auto w-full text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Trance & Study
           </h2>
