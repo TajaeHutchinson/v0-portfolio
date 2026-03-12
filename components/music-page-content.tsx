@@ -121,48 +121,51 @@ export function MusicPageContent() {
 
       {/* Section 1: Trance & Study */}
       <section className="min-h-screen flex flex-col justify-center px-6 py-24 bg-gradient-to-b from-[#0A0E27] to-[#1a1f3a] pt-32">
-        <div className="max-w-6xl mx-auto w-full">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center">
+        <div className="max-w-6xl mx-auto w-full text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Trance & Study
           </h2>
-          <p className="text-xl text-white/70 mb-12 text-center">
+          <p className="text-xl text-white/70 mb-12">
             Experimental soundscapes and visual storytelling
           </p>
           
           {/* Album Grid */}
-          <div className="grid grid-cols-2 gap-4 md:gap-6 mb-12">
+          <div className="grid grid-cols-2 gap-4 md:gap-6 mb-12 max-w-4xl mx-auto">
             {tranceStudyAlbums.map((album) => (
               <AlbumCard key={album.id} album={album} />
             ))}
           </div>
 
+          {/* Spotify Embed */}
+          <div className="max-w-2xl mx-auto mb-8">
+            <iframe
+              style={{ borderRadius: "12px" }}
+              src="https://open.spotify.com/embed/artist/52VlRvKcwWWeH8kX4A10ko?utm_source=generator"
+              width="100%"
+              height="352"
+              frameBorder="0"
+              allowFullScreen
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            />
+          </div>
+
           {/* YouTube Embeds */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 max-w-4xl mx-auto">
             {youtubeVideos.map((video) => (
-              <div key={video.id} className="aspect-video rounded-lg overflow-hidden border border-white/10">
+              <div key={video.id} className="rounded-lg overflow-hidden border border-white/20 shadow-lg">
                 <iframe
+                  style={{ borderRadius: "12px" }}
                   width="100%"
-                  height="100%"
+                  height="315"
                   src={`https://www.youtube.com/embed/${video.embedId}`}
                   title={video.title}
+                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
-                  className="w-full h-full"
                 />
               </div>
             ))}
-          </div>
-
-          {/* CTA */}
-          <div className="text-center">
-            <a
-              href="https://open.spotify.com/artist/2bU38jZ09FflRQ37LL5ROa"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-3 bg-purple-600 hover:bg-purple-700 text-white font-medium rounded-full transition-colors"
-            >
-              Listen on Spotify
-            </a>
           </div>
         </div>
       </section>
