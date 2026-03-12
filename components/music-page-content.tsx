@@ -182,9 +182,9 @@ export function MusicPageContent() {
             src="/images/glasseyefill/background.jpg"
             alt="Background"
             fill
-            className="object-cover opacity-40"
+            className="object-cover opacity-50"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-purple-900/40 to-black/80" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-purple-900/30 to-black/50" />
         </div>
 
         <div className="relative z-10 max-w-6xl mx-auto w-full text-center">
