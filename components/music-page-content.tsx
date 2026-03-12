@@ -38,11 +38,6 @@ const tranceStudyAlbums = [
 
 const youtubeVideos = [
   {
-    id: 1,
-    title: "Music Video 1",
-    embedId: "kmwFGLN0tzc",
-  },
-  {
     id: 2,
     title: "Music Video 2",
     embedId: "u408ob85xDw",
@@ -130,7 +125,7 @@ export function MusicPageContent() {
           </p>
           
           {/* Album Grid */}
-          <div className="grid grid-cols-2 gap-4 md:gap-6 mb-12 max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-12 max-w-4xl mx-auto">
             {tranceStudyAlbums.map((album) => (
               <AlbumCard key={album.id} album={album} />
             ))}
@@ -150,22 +145,20 @@ export function MusicPageContent() {
             />
           </div>
 
-          {/* YouTube Embeds */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 max-w-4xl mx-auto">
-            {youtubeVideos.map((video) => (
-              <div key={video.id} className="rounded-lg overflow-hidden border border-white/20 shadow-lg">
-                <iframe
-                  style={{ borderRadius: "12px" }}
-                  width="100%"
-                  height="315"
-                  src={`https://www.youtube.com/embed/${video.embedId}`}
-                  title={video.title}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              </div>
-            ))}
+          {/* YouTube Embed */}
+          <div className="max-w-2xl mx-auto mb-8">
+            <div className="rounded-lg overflow-hidden border border-white/20 shadow-lg">
+              <iframe
+                style={{ borderRadius: "12px" }}
+                width="100%"
+                height="315"
+                src={`https://www.youtube.com/embed/${youtubeVideos[0].embedId}`}
+                title={youtubeVideos[0].title}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
           </div>
         </div>
       </section>
