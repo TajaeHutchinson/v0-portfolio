@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import { cn } from "@/lib/utils"
 
-const titles = ["Systems", "Soundscapes", "Solutions"]
+const titles = ["Creative Technologist", "Workflow Designer", "Composer"]
 
 export function AnimatedTagline() {
   const [currentIndex, setCurrentIndex] = useState(0)
