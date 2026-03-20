@@ -43,6 +43,7 @@ export function HeroSection() {
                 alt={item.alt}
                 width={72}
                 height={72}
+                style={{ width: "auto", height: "auto" }}
                 className="w-16 h-16 object-contain transition-transform duration-300 group-hover:scale-110"
               />
               <span className="text-xs tracking-widest uppercase text-muted-foreground group-hover:text-primary transition-colors">
@@ -52,16 +53,17 @@ export function HeroSection() {
           ))}
         </div>
 
-        {/* Headshot */}
-        <div className="relative group">
-          <div className="absolute inset-0 -m-4 rounded-full border border-primary/10 animate-pulse" />
-          <div className="absolute inset-0 -m-8 rounded-full border border-primary/5" />
-          <div className="absolute inset-0 -m-1 rounded-full border-2 border-dashed border-primary/20 animate-spin-slow" />
+        {/* Headshot — explicit size on outer group so fill works */}
+        <div className="relative group w-44 h-44">
+          <div aria-hidden="true" className="absolute inset-0 -m-4 rounded-full border border-primary/10 animate-pulse" />
+          <div aria-hidden="true" className="absolute inset-0 -m-8 rounded-full border border-primary/5" />
+          <div aria-hidden="true" className="absolute inset-0 -m-1 rounded-full border-2 border-dashed border-primary/20 animate-spin-slow" />
           <div className="relative w-44 h-44 rounded-full overflow-hidden border-2 border-primary/30 transition-all duration-500 group-hover:border-primary/60 group-hover:scale-105">
             <Image
               src="/images/headshot.jpg"
               alt="Portrait"
               fill
+              sizes="176px"
               className="object-cover grayscale contrast-110 brightness-95 transition-all duration-500 group-hover:grayscale-0"
               priority
             />
@@ -75,39 +77,40 @@ export function HeroSection() {
         {/* Top-left */}
         <Link href="/templates" className="absolute top-[20%] left-[20%] z-10 group">
           <div className="relative flex flex-col items-center">
-            <Image src="/images/brain-icon.png" alt="Templates" width={104} height={104} className="w-24 h-24 object-contain transition-transform duration-500 group-hover:rotate-[360deg]" style={{ transitionDuration: "0.5s" }} />
+            <Image src="/images/brain-icon.png" alt="Templates" width={104} height={104} style={{ width: "auto", height: "auto", transitionDuration: "0.5s" }} className="w-24 h-24 object-contain transition-transform duration-500 group-hover:rotate-[360deg]" />
           </div>
         </Link>
         {/* Top-right */}
         <Link href="/music" className="absolute top-[20%] right-[20%] z-10 group">
           <div className="relative flex flex-col items-center">
-            <Image src="/images/eye-icon.png" alt="Music" width={104} height={104} className="w-24 h-24 object-contain transition-transform duration-500 group-hover:rotate-[360deg]" style={{ transitionDuration: "0.5s" }} />
+            <Image src="/images/eye-icon.png" alt="Music" width={104} height={104} style={{ width: "auto", height: "auto", transitionDuration: "0.5s" }} className="w-24 h-24 object-contain transition-transform duration-500 group-hover:rotate-[360deg]" />
           </div>
         </Link>
         {/* Bottom-left */}
         <Link href="/contact" className="absolute bottom-[20%] left-[20%] z-10 group">
           <div className="relative flex flex-col items-center">
-            <Image src="/images/contact-icon.png" alt="Contact" width={104} height={104} className="w-24 h-24 object-contain transition-transform duration-500 group-hover:rotate-[360deg]" style={{ transitionDuration: "0.5s" }} />
+            <Image src="/images/contact-icon.png" alt="Contact" width={104} height={104} style={{ width: "auto", height: "auto", transitionDuration: "0.5s" }} className="w-24 h-24 object-contain transition-transform duration-500 group-hover:rotate-[360deg]" />
           </div>
         </Link>
         {/* Bottom-right */}
         <Link href="/services" className="absolute bottom-[20%] right-[20%] z-10 group">
           <div className="relative flex flex-col items-center">
-            <Image src="/images/hand-icon.png" alt="Services" width={104} height={104} className="w-24 h-24 object-contain transition-transform duration-500 group-hover:rotate-[360deg]" style={{ transitionDuration: "0.5s" }} />
+            <Image src="/images/hand-icon.png" alt="Services" width={104} height={104} style={{ width: "auto", height: "auto", transitionDuration: "0.5s" }} className="w-24 h-24 object-contain transition-transform duration-500 group-hover:rotate-[360deg]" />
           </div>
         </Link>
 
-        {/* Center Headshot — desktop only */}
-        <div className="relative group">
-          <div className="absolute inset-0 -m-4 md:-m-6 rounded-full border border-primary/10 animate-pulse" />
-          <div className="absolute inset-0 -m-8 md:-m-12 rounded-full border border-primary/5" />
-          <div className="absolute inset-0 -m-12 md:-m-20 rounded-full border border-primary/[0.03]" />
-          <div className="absolute inset-0 -m-1 rounded-full border-2 border-dashed border-primary/20 animate-spin-slow" />
+        {/* Center Headshot — explicit size on outer group so fill works */}
+        <div className="relative group w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80">
+          <div aria-hidden="true" className="absolute inset-0 -m-4 md:-m-6 rounded-full border border-primary/10 animate-pulse" />
+          <div aria-hidden="true" className="absolute inset-0 -m-8 md:-m-12 rounded-full border border-primary/5" />
+          <div aria-hidden="true" className="absolute inset-0 -m-12 md:-m-20 rounded-full border border-primary/[0.03]" />
+          <div aria-hidden="true" className="absolute inset-0 -m-1 rounded-full border-2 border-dashed border-primary/20 animate-spin-slow" />
           <div className="relative w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border-2 border-primary/30 transition-all duration-500 group-hover:border-primary/60 group-hover:scale-105">
             <Image
               src="/images/headshot.jpg"
               alt="Portrait"
               fill
+              sizes="(max-width: 768px) 192px, (max-width: 1024px) 256px, 320px"
               className="object-cover grayscale contrast-110 brightness-95 transition-all duration-500 group-hover:grayscale-0"
               priority
             />
