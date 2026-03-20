@@ -103,26 +103,30 @@ export function ServicesPageContent() {
       {/* Fixed Header */}
       <header className="fixed top-0 left-0 right-0 z-40 bg-background/80 backdrop-blur-md border-b border-border/50">
         <div className="container mx-auto px-6 py-6 flex items-center justify-between">
-          <Link 
-            href="/" 
-            className="flex items-center gap-3 text-foreground/60 hover:text-primary transition-colors"
-          >
-            <ArrowLeft className="w-5 h-5" />
-            <span className="text-sm tracking-wider uppercase">Back</span>
-          </Link>
+          <div className="flex-1 flex justify-start">
+            <Link
+              href="/"
+              className="flex items-center gap-3 text-foreground/60 hover:text-primary transition-colors"
+            >
+              <ArrowLeft className="w-5 h-5" />
+              <span className="text-sm tracking-wider uppercase">Back</span>
+            </Link>
+          </div>
 
           <div className="flex items-center gap-4">
-            <Image 
-              src="/images/hand-icon.png" 
-              alt="Services" 
-              width={40} 
-              height={40} 
+            <Image
+              src="/images/hand-icon.png"
+              alt="Services"
+              width={40}
+              height={40}
               className="w-10 h-10 object-contain opacity-80"
             />
             <h1 className="text-2xl md:text-3xl font-light tracking-wider">SERVICES</h1>
           </div>
 
-          <HamburgerMenu />
+          <div className="flex-1 flex justify-end">
+            <HamburgerMenu />
+          </div>
         </div>
       </header>
 

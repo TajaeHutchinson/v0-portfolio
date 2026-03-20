@@ -30,6 +30,7 @@ export function HeroSection() {
           alt="Templates" 
           width={104} 
           height={104} 
+          style={{ width: "auto", height: "auto" }}
           className="w-20 h-20 md:w-26 md:h-26 object-contain"
         />
       </FloatingNavIcon>
@@ -40,6 +41,7 @@ export function HeroSection() {
           alt="Music" 
           width={104} 
           height={104} 
+          style={{ width: "auto", height: "auto" }}
           className="w-20 h-20 md:w-26 md:h-26 object-contain"
         />
       </FloatingNavIcon>
@@ -50,6 +52,7 @@ export function HeroSection() {
           alt="Contact" 
           width={104} 
           height={104} 
+          style={{ width: "auto", height: "auto" }}
           className="w-20 h-20 md:w-26 md:h-26 object-contain"
         />
       </FloatingNavIcon>
@@ -60,19 +63,18 @@ export function HeroSection() {
           alt="Services" 
           width={104} 
           height={104} 
+          style={{ width: "auto", height: "auto" }}
           className="w-20 h-20 md:w-26 md:h-26 object-contain"
         />
       </FloatingNavIcon>
 
       {/* Center Headshot */}
-      <div className="relative group">
+      <div className="relative group w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80">
         {/* Decorative rings */}
-        <div className="absolute inset-0 -m-4 md:-m-6 rounded-full border border-primary/10 animate-pulse" />
-        <div className="absolute inset-0 -m-8 md:-m-12 rounded-full border border-primary/5" />
-        <div className="absolute inset-0 -m-12 md:-m-20 rounded-full border border-primary/[0.03]" />
-        
-        {/* Hand-drawn style circle border */}
-        <div className="absolute inset-0 -m-1 rounded-full border-2 border-dashed border-primary/20 animate-spin-slow" />
+        <div aria-hidden="true" className="absolute inset-0 -m-4 md:-m-6 rounded-full border border-primary/10 animate-pulse" />
+        <div aria-hidden="true" className="absolute inset-0 -m-8 md:-m-12 rounded-full border border-primary/5" />
+        <div aria-hidden="true" className="absolute inset-0 -m-12 md:-m-20 rounded-full border border-primary/[0.03]" />
+        <div aria-hidden="true" className="absolute inset-0 -m-1 rounded-full border-2 border-dashed border-primary/20 animate-spin-slow" />
         
         {/* Main image container */}
         <div className="relative w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border-2 border-primary/30 transition-all duration-500 group-hover:border-primary/60 group-hover:scale-105">
@@ -80,14 +82,12 @@ export function HeroSection() {
             src="/images/headshot.jpg"
             alt="Portrait"
             fill
+            sizes="(max-width: 768px) 192px, (max-width: 1024px) 256px, 320px"
             className="object-cover grayscale contrast-110 brightness-95 transition-all duration-500 group-hover:grayscale-0"
             priority
           />
-          
-          {/* Overlay gradient */}
           <div className="absolute inset-0 bg-gradient-to-t from-background/30 via-transparent to-transparent" />
         </div>
-
       </div>
 
       {/* About Section */}

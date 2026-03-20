@@ -63,13 +63,15 @@ export function ContactPageContent() {
       {/* Fixed Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-white/5">
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-          <Link
-            href="/"
-            className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
-          >
-            <ArrowLeft className="w-5 h-5" />
-            <span className="text-sm tracking-wider uppercase">Back</span>
-          </Link>
+          <div className="flex-1 flex justify-start">
+            <Link
+              href="/"
+              className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+            >
+              <ArrowLeft className="w-5 h-5" />
+              <span className="text-sm tracking-wider uppercase">Back</span>
+            </Link>
+          </div>
 
           <div className="flex items-center gap-4">
             <Image
@@ -82,7 +84,9 @@ export function ContactPageContent() {
             <h1 className="text-2xl font-bold tracking-wider uppercase">Contact</h1>
           </div>
 
-          <HamburgerMenu />
+          <div className="flex-1 flex justify-end">
+            <HamburgerMenu />
+          </div>
         </div>
       </header>
 
