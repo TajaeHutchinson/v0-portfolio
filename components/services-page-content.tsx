@@ -108,10 +108,11 @@ export function ServicesPageContent() {
             className="flex items-center gap-3 text-foreground/60 hover:text-primary transition-colors shrink-0"
           >
             <ArrowLeft className="w-5 h-5" />
-            <span className="text-sm tracking-wider uppercase">Back</span>
+            <span className="text-sm tracking-wider uppercase hidden sm:inline">Back</span>
           </Link>
 
-          <div className="flex items-center gap-4 pr-14 md:pr-0">
+          {/* Title — padded right on mobile so fixed hamburger doesn't cover it */}
+          <div className="flex items-center gap-4 pr-16 sm:pr-0">
             <Image
               src="/images/hand-icon.png"
               alt="Services"
@@ -122,8 +123,10 @@ export function ServicesPageContent() {
             <h1 className="text-xl md:text-3xl font-light tracking-wider">SERVICES</h1>
           </div>
 
-          {/* Spacer to keep title centered — hidden on mobile since hamburger is fixed */}
-          <div className="hidden md:block w-12" />
+          {/* Hamburger — renders its own fixed button; this keeps it in the component tree */}
+          <div className="shrink-0">
+            <HamburgerMenu />
+          </div>
         </div>
       </header>
 

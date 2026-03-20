@@ -68,10 +68,11 @@ export function ContactPageContent() {
             className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors shrink-0"
           >
             <ArrowLeft className="w-5 h-5" />
-            <span className="text-sm tracking-wider uppercase">Back</span>
+            <span className="text-sm tracking-wider uppercase hidden sm:inline">Back</span>
           </Link>
 
-          <div className="flex items-center gap-3 pr-14 md:pr-0">
+          {/* Title — padded right on mobile so fixed hamburger doesn't cover it */}
+          <div className="flex items-center gap-3 pr-16 sm:pr-0">
             <Image
               src="/images/contact-icon.png"
               alt="Contact"
@@ -82,8 +83,10 @@ export function ContactPageContent() {
             <h1 className="text-xl md:text-2xl font-bold tracking-wider uppercase">Contact</h1>
           </div>
 
-          {/* Spacer to keep title centered — hidden on mobile since hamburger is fixed */}
-          <div className="hidden md:block w-12" />
+          {/* Hamburger — renders its own fixed button; this keeps it in the component tree */}
+          <div className="shrink-0">
+            <HamburgerMenu />
+          </div>
         </div>
       </header>
 
