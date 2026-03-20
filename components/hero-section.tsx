@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import Link from "next/link"
+import { FloatingNavIcon } from "./floating-nav-icon"
 import { AboutSection } from "./about-section"
 
 export function HeroSection() {
@@ -22,61 +22,70 @@ export function HeroSection() {
         }}
       />
 
-      {/* Icon layout — same structure on all screen sizes: 4 absolute corners + centered headshot */}
-      <div className="relative w-[340px] h-[340px] sm:w-[440px] sm:h-[440px] md:w-[560px] md:h-[560px] lg:w-[700px] lg:h-[700px]">
+      {/* Floating Navigation Icons */}
+      <FloatingNavIcon href="/templates" label="Templates" position="top-left">
+        <Image
+          src="/images/brain-icon.png"
+          alt="Templates"
+          width={96}
+          height={96}
+          style={{ width: "auto", height: "auto" }}
+          className="w-10 h-10 md:w-16 md:h-16 object-contain"
+        />
+      </FloatingNavIcon>
 
-        {/* Top-left — Templates */}
-        <Link href="/templates" className="absolute top-0 left-0 z-10 group flex flex-col items-center gap-1">
-          <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 transition-transform duration-500 group-hover:rotate-[360deg]" style={{ transitionDuration: "0.5s" }}>
-            <Image src="/images/brain-icon.png" alt="Templates" width={96} height={96} style={{ width: "100%", height: "100%" }} className="object-contain" />
-          </div>
-          <span className="text-[10px] sm:text-xs tracking-widest uppercase text-muted-foreground group-hover:text-primary transition-colors">Templates</span>
-        </Link>
+      <FloatingNavIcon href="/music" label="Music" position="top-right">
+        <Image
+          src="/images/eye-icon.png"
+          alt="Music"
+          width={96}
+          height={96}
+          style={{ width: "auto", height: "auto" }}
+          className="w-10 h-10 md:w-16 md:h-16 object-contain"
+        />
+      </FloatingNavIcon>
 
-        {/* Top-right — Music */}
-        <Link href="/music" className="absolute top-0 right-0 z-10 group flex flex-col items-center gap-1">
-          <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 transition-transform duration-500 group-hover:rotate-[360deg]" style={{ transitionDuration: "0.5s" }}>
-            <Image src="/images/eye-icon.png" alt="Music" width={96} height={96} style={{ width: "100%", height: "100%" }} className="object-contain" />
-          </div>
-          <span className="text-[10px] sm:text-xs tracking-widest uppercase text-muted-foreground group-hover:text-primary transition-colors">Music</span>
-        </Link>
+      <FloatingNavIcon href="/contact" label="Contact" position="bottom-left">
+        <Image
+          src="/images/contact-icon.png"
+          alt="Contact"
+          width={96}
+          height={96}
+          style={{ width: "auto", height: "auto" }}
+          className="w-10 h-10 md:w-16 md:h-16 object-contain"
+        />
+      </FloatingNavIcon>
 
-        {/* Bottom-left — Contact */}
-        <Link href="/contact" className="absolute bottom-0 left-0 z-10 group flex flex-col items-center gap-1">
-          <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 transition-transform duration-500 group-hover:rotate-[360deg]" style={{ transitionDuration: "0.5s" }}>
-            <Image src="/images/contact-icon.png" alt="Contact" width={96} height={96} style={{ width: "100%", height: "100%" }} className="object-contain" />
-          </div>
-          <span className="text-[10px] sm:text-xs tracking-widest uppercase text-muted-foreground group-hover:text-primary transition-colors">Contact</span>
-        </Link>
+      <FloatingNavIcon href="/services" label="Services" position="bottom-right">
+        <Image
+          src="/images/hand-icon.png"
+          alt="Services"
+          width={96}
+          height={96}
+          style={{ width: "auto", height: "auto" }}
+          className="w-10 h-10 md:w-16 md:h-16 object-contain"
+        />
+      </FloatingNavIcon>
 
-        {/* Bottom-right — Services */}
-        <Link href="/services" className="absolute bottom-0 right-0 z-10 group flex flex-col items-center gap-1">
-          <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 transition-transform duration-500 group-hover:rotate-[360deg]" style={{ transitionDuration: "0.5s" }}>
-            <Image src="/images/hand-icon.png" alt="Services" width={96} height={96} style={{ width: "100%", height: "100%" }} className="object-contain" />
-          </div>
-          <span className="text-[10px] sm:text-xs tracking-widest uppercase text-muted-foreground group-hover:text-primary transition-colors">Services</span>
-        </Link>
-
-        {/* Center — Headshot */}
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="relative group">
-            <div aria-hidden="true" className="absolute inset-0 -m-4 rounded-full border border-primary/10 animate-pulse" />
-            <div aria-hidden="true" className="absolute inset-0 -m-8 rounded-full border border-primary/5" />
-            <div aria-hidden="true" className="absolute inset-0 -m-1 rounded-full border-2 border-dashed border-primary/20 animate-spin-slow" />
-            <div className="relative w-36 h-36 sm:w-48 sm:h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border-2 border-primary/30 transition-all duration-500 group-hover:border-primary/60 group-hover:scale-105" style={{ isolation: "isolate" }}>
-              <Image
-                src="/images/headshot.jpg"
-                alt="Portrait"
-                fill
-                sizes="(max-width: 640px) 144px, (max-width: 768px) 192px, (max-width: 1024px) 256px, 320px"
-                className="object-cover grayscale contrast-110 brightness-95 transition-all duration-500 group-hover:grayscale-0"
-                priority
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/30 via-transparent to-transparent" />
-            </div>
-          </div>
+      {/* Center Headshot */}
+      <div className="relative group w-fit">
+        <div aria-hidden="true" className="absolute inset-0 -m-4 md:-m-6 rounded-full border border-primary/10 animate-pulse" />
+        <div aria-hidden="true" className="absolute inset-0 -m-8 md:-m-12 rounded-full border border-primary/5" />
+        <div aria-hidden="true" className="absolute inset-0 -m-1 rounded-full border-2 border-dashed border-primary/20 animate-spin-slow" />
+        <div
+          className="relative w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border-2 border-primary/30 transition-all duration-500 group-hover:border-primary/60 group-hover:scale-105"
+          style={{ isolation: "isolate" }}
+        >
+          <Image
+            src="/images/headshot.jpg"
+            alt="Portrait"
+            fill
+            sizes="(max-width: 768px) 192px, (max-width: 1024px) 256px, 320px"
+            className="object-cover grayscale contrast-110 brightness-95 transition-all duration-500 group-hover:grayscale-0"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-background/30 via-transparent to-transparent" />
         </div>
-
       </div>
 
       {/* About Section */}
