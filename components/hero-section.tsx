@@ -27,32 +27,32 @@ export function HeroSection() {
 
         {/* Top-left — Templates */}
         <Link href="/templates" className="absolute top-0 left-0 z-10 group flex flex-col items-center gap-1">
-          <div className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 transition-transform duration-500 group-hover:rotate-[360deg]" style={{ transitionDuration: "0.5s" }}>
-            <Image src="/images/brain-icon.png" alt="Templates" fill className="object-contain" />
+          <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 transition-transform duration-500 group-hover:rotate-[360deg]" style={{ transitionDuration: "0.5s" }}>
+            <Image src="/images/brain-icon.png" alt="Templates" width={96} height={96} className="w-full h-full object-contain" />
           </div>
           <span className="text-[10px] sm:text-xs tracking-widest uppercase text-muted-foreground group-hover:text-primary transition-colors">Templates</span>
         </Link>
 
         {/* Top-right — Music */}
         <Link href="/music" className="absolute top-0 right-0 z-10 group flex flex-col items-center gap-1">
-          <div className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 transition-transform duration-500 group-hover:rotate-[360deg]" style={{ transitionDuration: "0.5s" }}>
-            <Image src="/images/eye-icon.png" alt="Music" fill className="object-contain" />
+          <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 transition-transform duration-500 group-hover:rotate-[360deg]" style={{ transitionDuration: "0.5s" }}>
+            <Image src="/images/eye-icon.png" alt="Music" width={96} height={96} className="w-full h-full object-contain" />
           </div>
           <span className="text-[10px] sm:text-xs tracking-widest uppercase text-muted-foreground group-hover:text-primary transition-colors">Music</span>
         </Link>
 
         {/* Bottom-left — Contact */}
         <Link href="/contact" className="absolute bottom-0 left-0 z-10 group flex flex-col items-center gap-1">
-          <div className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 transition-transform duration-500 group-hover:rotate-[360deg]" style={{ transitionDuration: "0.5s" }}>
-            <Image src="/images/contact-icon.png" alt="Contact" fill className="object-contain" />
+          <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 transition-transform duration-500 group-hover:rotate-[360deg]" style={{ transitionDuration: "0.5s" }}>
+            <Image src="/images/contact-icon.png" alt="Contact" width={96} height={96} className="w-full h-full object-contain" />
           </div>
           <span className="text-[10px] sm:text-xs tracking-widest uppercase text-muted-foreground group-hover:text-primary transition-colors">Contact</span>
         </Link>
 
         {/* Bottom-right — Services */}
         <Link href="/services" className="absolute bottom-0 right-0 z-10 group flex flex-col items-center gap-1">
-          <div className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 transition-transform duration-500 group-hover:rotate-[360deg]" style={{ transitionDuration: "0.5s" }}>
-            <Image src="/images/hand-icon.png" alt="Services" fill className="object-contain" />
+          <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 transition-transform duration-500 group-hover:rotate-[360deg]" style={{ transitionDuration: "0.5s" }}>
+            <Image src="/images/hand-icon.png" alt="Services" width={96} height={96} className="w-full h-full object-contain" />
           </div>
           <span className="text-[10px] sm:text-xs tracking-widest uppercase text-muted-foreground group-hover:text-primary transition-colors">Services</span>
         </Link>

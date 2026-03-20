@@ -60,6 +60,9 @@ export function ContactPageContent() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
+      {/* Hamburger — rendered outside the header so its fixed overlay isn't clipped */}
+      <HamburgerMenu />
+
       {/* Fixed Header */}
       <header className="fixed top-0 left-0 right-0 z-40 bg-background/80 backdrop-blur-sm border-b border-white/5">
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
@@ -71,8 +74,8 @@ export function ContactPageContent() {
             <span className="text-sm tracking-wider uppercase hidden sm:inline">Back</span>
           </Link>
 
-          {/* Title — padded right on mobile so fixed hamburger doesn't cover it */}
-          <div className="flex items-center gap-3 pr-16 sm:pr-0">
+          {/* Centered title */}
+          <div className="flex items-center gap-3">
             <Image
               src="/images/contact-icon.png"
               alt="Contact"
@@ -83,10 +86,8 @@ export function ContactPageContent() {
             <h1 className="text-xl md:text-2xl font-bold tracking-wider uppercase">Contact</h1>
           </div>
 
-          {/* Hamburger — renders its own fixed button; this keeps it in the component tree */}
-          <div className="shrink-0">
-            <HamburgerMenu />
-          </div>
+          {/* Spacer to balance the Back button and keep title centered */}
+          <div className="w-16" />
         </div>
       </header>
 
