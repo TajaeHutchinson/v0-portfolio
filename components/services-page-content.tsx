@@ -100,9 +100,6 @@ const services = [
 export function ServicesPageContent() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      {/* Hamburger — rendered outside the header so its fixed overlay isn't clipped */}
-      <HamburgerMenu />
-
       {/* Fixed Header */}
       <header className="fixed top-0 left-0 right-0 z-40 bg-background/80 backdrop-blur-md border-b border-border/50">
         <div className="container mx-auto px-6 py-6 flex items-center justify-between">
@@ -111,11 +108,10 @@ export function ServicesPageContent() {
             className="flex items-center gap-3 text-foreground/60 hover:text-primary transition-colors shrink-0"
           >
             <ArrowLeft className="w-5 h-5" />
-            <span className="text-sm tracking-wider uppercase hidden sm:inline">Back</span>
+            <span className="text-sm tracking-wider uppercase">Back</span>
           </Link>
 
-          {/* Centered title */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 pr-14 md:pr-0">
             <Image
               src="/images/hand-icon.png"
               alt="Services"
@@ -126,8 +122,8 @@ export function ServicesPageContent() {
             <h1 className="text-xl md:text-3xl font-light tracking-wider">SERVICES</h1>
           </div>
 
-          {/* Spacer to balance the Back button and keep title centered */}
-          <div className="w-16" />
+          {/* Spacer to keep title centered — hidden on mobile since hamburger is fixed */}
+          <div className="hidden md:block w-12" />
         </div>
       </header>
 
