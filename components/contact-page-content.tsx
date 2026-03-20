@@ -61,29 +61,28 @@ export function ContactPageContent() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Fixed Header */}
-      <header className="fixed top-0 left-0 right-0 z-40 bg-background/80 backdrop-blur-sm border-b border-white/5">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-white/5">
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
           <Link
             href="/"
-            className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors shrink-0"
+            className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
           >
             <ArrowLeft className="w-5 h-5" />
             <span className="text-sm tracking-wider uppercase">Back</span>
           </Link>
 
-          <div className="flex items-center gap-3 pr-14 md:pr-0">
+          <div className="flex items-center gap-4">
             <Image
               src="/images/contact-icon.png"
               alt="Contact"
               width={32}
               height={32}
-              className="w-7 h-7 md:w-8 md:h-8 object-contain shrink-0"
+              className="w-8 h-8 object-contain"
             />
-            <h1 className="text-xl md:text-2xl font-bold tracking-wider uppercase">Contact</h1>
+            <h1 className="text-2xl font-bold tracking-wider uppercase">Contact</h1>
           </div>
 
-          {/* Spacer to keep title centered — hidden on mobile since hamburger is fixed */}
-          <div className="hidden md:block w-12" />
+          <HamburgerMenu />
         </div>
       </header>
 
