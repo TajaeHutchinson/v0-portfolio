@@ -103,27 +103,26 @@ export function ServicesPageContent() {
       {/* Fixed Header */}
       <header className="fixed top-0 left-0 right-0 z-40 bg-background/80 backdrop-blur-md border-b border-border/50">
         <div className="container mx-auto px-6 py-6 flex items-center justify-between">
-          <Link
-            href="/"
-            className="flex items-center gap-3 text-foreground/60 hover:text-primary transition-colors shrink-0"
+          <Link 
+            href="/" 
+            className="flex items-center gap-3 text-foreground/60 hover:text-primary transition-colors"
           >
             <ArrowLeft className="w-5 h-5" />
             <span className="text-sm tracking-wider uppercase">Back</span>
           </Link>
 
-          <div className="flex items-center gap-4 pr-14 md:pr-0">
-            <Image
-              src="/images/hand-icon.png"
-              alt="Services"
-              width={40}
-              height={40}
-              className="w-8 h-8 md:w-10 md:h-10 object-contain opacity-80 shrink-0"
+          <div className="flex items-center gap-4">
+            <Image 
+              src="/images/hand-icon.png" 
+              alt="Services" 
+              width={40} 
+              height={40} 
+              className="w-10 h-10 object-contain opacity-80"
             />
-            <h1 className="text-xl md:text-3xl font-light tracking-wider">SERVICES</h1>
+            <h1 className="text-2xl md:text-3xl font-light tracking-wider">SERVICES</h1>
           </div>
 
-          {/* Spacer to keep title centered — hidden on mobile since hamburger is fixed */}
-          <div className="hidden md:block w-12" />
+          <HamburgerMenu />
         </div>
       </header>
 
