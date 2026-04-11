@@ -119,7 +119,7 @@ const GRID_IMAGES = [
   // New additions
   {
     src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_9958-NHTpZC3GM8FuPkKy0kyWKQtCqi1VNI.jpg",
-    alt: "Side profile with blue and gray box braids, smiling outdoors",
+    alt: "Side profile with blue and gray box braids, smiling outdoors next to a car",
     aspectClass: "aspect-[4/3]",
     delay: 140,
     direction: "left" as const,
@@ -132,8 +132,15 @@ const GRID_IMAGES = [
     direction: "up" as const,
   },
   {
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/21-hY1biTER6sbodlFmVyZdHTvPAq9DP3.jpg",
+    alt: "Rippling multi-exposure figure collage on blue and orange background",
+    aspectClass: "aspect-square",
+    delay: 160,
+    direction: "up" as const,
+  },
+  {
     src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/22-gpFlZr363WH1bInX0vmq3uSpBVrLt1.jpg",
-    alt: "Diptych: one pose upright and one inverted on sandy textured background",
+    alt: "Mars diptych: one pose upright and one inverted on sandy textured background",
     aspectClass: "aspect-square",
     delay: 260,
     direction: "right" as const,
@@ -375,7 +382,7 @@ export function AboutMeSection() {
               src={GRID_IMAGES[8].src}
               alt={GRID_IMAGES[8].alt}
               fill
-              sizes="28vw"
+              sizes="22vw"
               className="object-cover object-center"
             />
           </div>
@@ -387,43 +394,55 @@ export function AboutMeSection() {
               src={GRID_IMAGES[9].src}
               alt={GRID_IMAGES[9].alt}
               fill
-              sizes="14vw"
+              sizes="12vw"
               className="object-cover object-top"
             />
           </div>
         </ScrollReveal>
-        {/* mars diptych — square */}
-        <ScrollReveal delay={180} direction="up" className="flex-[1.4] min-w-0">
+        {/* ripple collage blue+orange — square */}
+        <ScrollReveal delay={160} direction="up" className="flex-[1.4] min-w-0">
           <div className="relative w-full overflow-hidden rounded-sm aspect-square">
             <Image
               src={GRID_IMAGES[10].src}
               alt={GRID_IMAGES[10].alt}
               fill
-              sizes="18vw"
+              sizes="16vw"
               className="object-cover"
             />
           </div>
         </ScrollReveal>
-        {/* grayscale double white — square */}
-        <ScrollReveal delay={240} direction="up" className="flex-[1.4] min-w-0">
+        {/* mars diptych — square */}
+        <ScrollReveal delay={220} direction="up" className="flex-[1.4] min-w-0">
           <div className="relative w-full overflow-hidden rounded-sm aspect-square">
             <Image
               src={GRID_IMAGES[11].src}
               alt={GRID_IMAGES[11].alt}
               fill
-              sizes="18vw"
+              sizes="16vw"
               className="object-cover"
             />
           </div>
         </ScrollReveal>
-        {/* orange citrus double — square */}
-        <ScrollReveal delay={300} direction="up" className="flex-[1.4] min-w-0">
+        {/* grayscale double white — square */}
+        <ScrollReveal delay={280} direction="up" className="flex-[1.4] min-w-0">
           <div className="relative w-full overflow-hidden rounded-sm aspect-square">
             <Image
               src={GRID_IMAGES[12].src}
               alt={GRID_IMAGES[12].alt}
               fill
-              sizes="18vw"
+              sizes="16vw"
+              className="object-cover"
+            />
+          </div>
+        </ScrollReveal>
+        {/* orange citrus double — square */}
+        <ScrollReveal delay={340} direction="up" className="flex-[1.4] min-w-0">
+          <div className="relative w-full overflow-hidden rounded-sm aspect-square">
+            <Image
+              src={GRID_IMAGES[13].src}
+              alt={GRID_IMAGES[13].alt}
+              fill
+              sizes="16vw"
               className="object-cover"
             />
           </div>
