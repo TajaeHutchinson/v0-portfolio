@@ -96,7 +96,7 @@ const GRID_IMAGES = [
     direction: "right" as const,
   },
   {
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/21-UC1x6Kr1jI50PppSWHetXZRTO6SSTN.jpg",
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/21-hY1biTER6sbodlFmVyZdHTvPAq9DP3.jpg",
     alt: "Rippling repeated figure collage on blue and orange background",
     aspectClass: "aspect-square",
     delay: 160,
@@ -115,6 +115,42 @@ const GRID_IMAGES = [
     aspectClass: "aspect-square",
     delay: 120,
     direction: "right" as const,
+  },
+  // New additions
+  {
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_9958-NHTpZC3GM8FuPkKy0kyWKQtCqi1VNI.jpg",
+    alt: "Side profile with blue and gray box braids, smiling outdoors",
+    aspectClass: "aspect-[4/3]",
+    delay: 140,
+    direction: "left" as const,
+  },
+  {
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/20-Cy6STUJGKEzMQjmAwB4pEC3vQCSFjy.jpg",
+    alt: "Lavender-toned portrait with glitter eye shadow, tilted head on white background",
+    aspectClass: "aspect-[3/4]",
+    delay: 200,
+    direction: "up" as const,
+  },
+  {
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/22-gpFlZr363WH1bInX0vmq3uSpBVrLt1.jpg",
+    alt: "Diptych: one pose upright and one inverted on sandy textured background",
+    aspectClass: "aspect-square",
+    delay: 260,
+    direction: "right" as const,
+  },
+  {
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/16-NFAKt1B5ZpYulnorjdkl97BnodGmRV.jpg",
+    alt: "Grayscale mirrored double portrait on white background",
+    aspectClass: "aspect-square",
+    delay: 180,
+    direction: "up" as const,
+  },
+  {
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/17-UzO6HF1U4WvhLNRcp1VcWQaWVe1ATt.jpg",
+    alt: "Grayscale double figure on orange citrus background",
+    aspectClass: "aspect-square",
+    delay: 320,
+    direction: "left" as const,
   },
 ]
 
@@ -314,7 +350,7 @@ export function AboutMeSection() {
 
         {/* Staggered 2-col masonry strip */}
         <div className="grid grid-cols-2 gap-3 mt-2">
-          {GRID_IMAGES.slice(0, 6).map((img, i) => (
+          {GRID_IMAGES.map((img, i) => (
             <ScrollReveal key={img.src} delay={i * 60} direction="up">
               <div className={`relative w-full overflow-hidden rounded-sm ${img.aspectClass}`}>
                 <Image
@@ -328,6 +364,70 @@ export function AboutMeSection() {
             </ScrollReveal>
           ))}
         </div>
+      </div>
+
+      {/* ── Second row: new image strip (desktop) ── */}
+      <div className="hidden md:flex gap-5 lg:gap-6 mt-5 lg:mt-6 max-w-[1400px] mx-auto items-end">
+        {/* landscape braid side-profile — wide */}
+        <ScrollReveal delay={60} direction="up" className="flex-[2] min-w-0">
+          <div className="relative w-full overflow-hidden rounded-sm aspect-[4/3]">
+            <Image
+              src={GRID_IMAGES[8].src}
+              alt={GRID_IMAGES[8].alt}
+              fill
+              sizes="28vw"
+              className="object-cover object-center"
+            />
+          </div>
+        </ScrollReveal>
+        {/* lavender portrait — tall */}
+        <ScrollReveal delay={120} direction="up" className="flex-[1] min-w-0">
+          <div className="relative w-full overflow-hidden rounded-sm aspect-[3/4]">
+            <Image
+              src={GRID_IMAGES[9].src}
+              alt={GRID_IMAGES[9].alt}
+              fill
+              sizes="14vw"
+              className="object-cover object-top"
+            />
+          </div>
+        </ScrollReveal>
+        {/* mars diptych — square */}
+        <ScrollReveal delay={180} direction="up" className="flex-[1.4] min-w-0">
+          <div className="relative w-full overflow-hidden rounded-sm aspect-square">
+            <Image
+              src={GRID_IMAGES[10].src}
+              alt={GRID_IMAGES[10].alt}
+              fill
+              sizes="18vw"
+              className="object-cover"
+            />
+          </div>
+        </ScrollReveal>
+        {/* grayscale double white — square */}
+        <ScrollReveal delay={240} direction="up" className="flex-[1.4] min-w-0">
+          <div className="relative w-full overflow-hidden rounded-sm aspect-square">
+            <Image
+              src={GRID_IMAGES[11].src}
+              alt={GRID_IMAGES[11].alt}
+              fill
+              sizes="18vw"
+              className="object-cover"
+            />
+          </div>
+        </ScrollReveal>
+        {/* orange citrus double — square */}
+        <ScrollReveal delay={300} direction="up" className="flex-[1.4] min-w-0">
+          <div className="relative w-full overflow-hidden rounded-sm aspect-square">
+            <Image
+              src={GRID_IMAGES[12].src}
+              alt={GRID_IMAGES[12].alt}
+              fill
+              sizes="18vw"
+              className="object-cover"
+            />
+          </div>
+        </ScrollReveal>
       </div>
 
       {/* Bottom divider */}
