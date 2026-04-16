@@ -245,13 +245,22 @@ export function AboutMeSection() {
                 refuses easy answers.
               </p>
             </div>
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 text-primary text-sm tracking-widest uppercase border-b border-primary/40 pb-1 w-fit hover:border-primary transition-colors duration-300 mt-7"
-            >
-              Work with me
-              <span aria-hidden="true" className="text-xs">→</span>
-            </Link>
+            <div className="flex flex-wrap items-center gap-6 mt-7">
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 text-primary text-sm tracking-widest uppercase border-b border-primary/40 pb-1 w-fit hover:border-primary transition-colors duration-300"
+              >
+                Work with me
+                <span aria-hidden="true" className="text-xs">→</span>
+              </Link>
+              <Link
+                href="/builds"
+                className="inline-flex items-center gap-2 text-muted-foreground text-sm tracking-widest uppercase border-b border-border/40 pb-1 w-fit hover:text-primary hover:border-primary/40 transition-colors duration-300"
+              >
+                Builds
+                <span aria-hidden="true" className="text-xs">→</span>
+              </Link>
+            </div>
           </ScrollReveal>
         </div>
 
@@ -340,13 +349,22 @@ export function AboutMeSection() {
                 project is a conversation — one that asks hard questions and
                 refuses easy answers.
               </p>
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 text-primary text-sm tracking-widest uppercase border-b border-primary/40 pb-1 w-fit hover:border-primary transition-colors duration-300"
-              >
-                Work with me
-                <span aria-hidden="true" className="text-xs">→</span>
-              </Link>
+              <div className="flex flex-wrap items-center gap-5">
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center gap-2 text-primary text-sm tracking-widest uppercase border-b border-primary/40 pb-1 w-fit hover:border-primary transition-colors duration-300"
+                >
+                  Work with me
+                  <span aria-hidden="true" className="text-xs">→</span>
+                </Link>
+                <Link
+                  href="/builds"
+                  className="inline-flex items-center gap-2 text-muted-foreground text-sm tracking-widest uppercase border-b border-border/40 pb-1 w-fit hover:text-primary hover:border-primary/40 transition-colors duration-300"
+                >
+                  Builds
+                  <span aria-hidden="true" className="text-xs">→</span>
+                </Link>
+              </div>
             </div>
           </ScrollReveal>
 

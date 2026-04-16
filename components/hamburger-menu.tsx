@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils"
 
 const menuItems = [
   { label: "Music", href: "/music" },
+  { label: "Builds", href: "/builds" },
   { label: "Services", href: "/services" },
   { label: "Templates", href: "/templates" },
   { label: "Contact", href: "/contact" },
