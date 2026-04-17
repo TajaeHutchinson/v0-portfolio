@@ -18,13 +18,13 @@ const builds = [
   },
   {
     slug: "ai-devops-tracker",
-    title: "AI DevOps Evolution Tracker",
+    title: "AI DevOps Evolution",
     date: "Sept – Nov 2025",
     synopsis:
-      "A living archive documenting how AI development practices evolved across 4 versions — from manual API logging to multi-agent orchestration with MCP and intentionality mapping.",
+      "A documentation archive mapping how AI DevOps practices evolved through versioned systems — from manual logging to tone architecture and intentionality mapping.",
     tags: ["Notion", "AI Documentation", "MCP", "Systems Design"],
     badge: "Ongoing",
-    preview: null,
+    preview: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Copy%20of%20Time%20Signature%20Genre%20DAW%20Used%20Tone%20Tags%20Lyrics%20Stem%20Folder%20Link%20Final%20Audio%20Artwork%20Link%20Loudness%20%28LUFS%29%20Mixed%20%20Mastered%20Checkboxes%20Notes%20%288%29-ubgc1aE3P0xTZcRzWD5UeGslvZQ8nu.png",
   },
 ]
 
