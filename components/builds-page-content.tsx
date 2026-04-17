@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowLeft, Zap } from "lucide-react"
 import { HamburgerMenu } from "./hamburger-menu"
 
@@ -10,9 +11,10 @@ const builds = [
     title: "Music Metadata Agent",
     date: "April 2026",
     synopsis:
-      "A Notion AI-powered agent built in 48 hours that automates music metadata management for independent musicians — from catalog organization to export-ready PRO metadata.",
+      "A Notion AI agent that automates music metadata for independent musicians — the automation layer inside the Music Metadata Tracker system.",
     tags: ["Notion AI", "MCP Protocol", "TypeScript", "Web Scraping"],
     badge: "Hackathon",
+    preview: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_9958-NHTpZC3GM8FuPkKy0kyWKQtCqi1VNI.jpg",
   },
   {
     slug: "ai-devops-tracker",
@@ -22,6 +24,7 @@ const builds = [
       "A living archive documenting how AI development practices evolved across 4 versions — from manual API logging to multi-agent orchestration with MCP and intentionality mapping.",
     tags: ["Notion", "AI Documentation", "MCP", "Systems Design"],
     badge: "Ongoing",
+    preview: null,
   },
 ]
 
@@ -82,6 +85,20 @@ export function BuildsPageContent() {
               >
                 {/* Top accent line */}
                 <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+                {/* Image preview */}
+                {build.preview && (
+                  <div className="relative w-full h-44 overflow-hidden bg-muted/30">
+                    <Image
+                      src={build.preview}
+                      alt={`${build.title} preview`}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="object-cover object-top grayscale group-hover:grayscale-0 group-hover:scale-[1.03] transition-all duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
+                  </div>
+                )}
 
                 <div className="flex flex-col gap-5 p-7 flex-1">
                   {/* Meta row */}
