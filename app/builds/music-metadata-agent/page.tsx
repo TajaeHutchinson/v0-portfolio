@@ -7,15 +7,15 @@ import { HamburgerMenu } from "@/components/hamburger-menu"
 
 const slides = [
   {
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_9958-NHTpZC3GM8FuPkKy0kyWKQtCqi1VNI.jpg",
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-04-16%20at%2011.20.41%E2%80%AFPM-fwAqbP2btb1zYuYmp7wih5HMCXASHa.png",
     caption: "Agent UI — Notion AI interface running metadata generation",
   },
   {
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/20-Cy6STUJGKEzMQjmAwB4pEC3vQCSFjy.jpg",
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-04-16%20at%2011.24.04%E2%80%AFPM-BTOHHyXuyv1aHhLifHnEf5gUUm8ETl.png",
     caption: "PRO export concept — automated metadata ready for PRO submission",
   },
   {
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/21-hY1biTER6sbodlFmVyZdHTvPAq9DP3.jpg",
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-04-16%20at%2011.25.36%E2%80%AFPM-CfOEcu0hvjh7arhWVDxvi8gxSSFOYz.png",
     caption: "Auto-import flow — web scraping feeding directly into Notion",
   },
 ]
@@ -166,13 +166,13 @@ export default function MusicMetadataAgentPage() {
                   key={i}
                   className="group relative rounded-xl border border-border/40 overflow-hidden bg-muted/20"
                 >
-                  <div className="relative w-full aspect-video">
+                  <div className="relative w-full aspect-[16/9]">
                     <Image
                       src={slide.src}
                       alt={slide.caption}
                       fill
                       sizes="(max-width: 768px) 100vw, 768px"
-                      className="object-cover group-hover:scale-[1.02] transition-transform duration-500"
+                      className="object-cover object-top group-hover:scale-[1.02] transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
                   </div>
