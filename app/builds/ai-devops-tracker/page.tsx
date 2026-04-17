@@ -21,7 +21,7 @@ const versions = [
     docLabel: "View v1.0 Documentation",
     templateHref: null,
     templateLabel: null,
-    image: null,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-01-01%20at%206.56.19%E2%80%AFPM-REjble1eFDoblUvkDK4Hp90CPP2dR9.png",
   },
   {
     version: "v2.0",
@@ -37,7 +37,7 @@ const versions = [
     docLabel: "View v2.0 Documentation",
     templateHref: null,
     templateLabel: null,
-    image: null,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-12-23%20at%204.35.59%E2%80%AFPM-ijy9xzBJK2zkNrngZYhXk9aWSLpxLb.png",
   },
   {
     version: "v2.1",
@@ -53,7 +53,7 @@ const versions = [
     docLabel: "View v2.1 Documentation",
     templateHref: "https://www.notion.so/marketplace/templates/ai-dev-ops-tracker-lite",
     templateLabel: "Get v2.1 Free Template",
-    image: null,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-12-23%20at%203.57.39%E2%80%AFPM-450nIrDe9Vnbd3qimZaIR66OrFbSgL.png",
   },
   {
     version: "v3.0",
@@ -148,12 +148,12 @@ function VersionBlock({ v }: { v: typeof versions[number] }) {
             Paradigm shift: <span className="text-muted-foreground/70 not-italic">{v.paradigm}</span>
           </p>
 
-          {/* Architecture image (v3.0 only) */}
+          {/* Version screenshot */}
           {v.image && (
             <div className="relative w-full rounded-lg overflow-hidden border border-border/40 aspect-[16/9]">
               <Image
                 src={v.image}
-                alt="AI Archetype DevOps System — 3-Layer Architecture diagram"
+                alt={`${v.version} — ${v.era}`}
                 fill
                 sizes="(max-width: 768px) 100vw, 720px"
                 className="object-cover object-top"
