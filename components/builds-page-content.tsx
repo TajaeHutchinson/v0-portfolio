@@ -14,7 +14,7 @@ const builds = [
       "A Notion AI agent that automates music metadata for independent musicians — the automation layer inside the Music Metadata Tracker system.",
     tags: ["Notion AI", "MCP Protocol", "TypeScript", "Web Scraping"],
     badge: "Hackathon",
-    preview: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_9958-NHTpZC3GM8FuPkKy0kyWKQtCqi1VNI.jpg",
+    preview: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-04-16%20at%2011.24.20%E2%80%AFPM-qtJhf9RPwH5KHBaZEVmNw0seqNxCd9.png",
   },
   {
     slug: "ai-devops-tracker",
