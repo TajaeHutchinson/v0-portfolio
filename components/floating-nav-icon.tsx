@@ -15,11 +15,11 @@ export function FloatingNavIcon({ href, label, position, children }: FloatingNav
   const [isHovered, setIsHovered] = useState(false)
 
   const positionClasses = {
-    "top-left": "top-[15%] left-[15%] md:top-[20%] md:left-[20%]",
-    "top-right": "top-[15%] right-[15%] md:top-[20%] md:right-[20%]",
-    "bottom-left": "bottom-[15%] left-[15%] md:bottom-[20%] md:left-[20%]",
-    "bottom-right": "bottom-[15%] right-[15%] md:bottom-[20%] md:right-[20%]",
-  }
+  "top-left": "top-[20%] left-[20%] md:top-[20%] md:left-[20%]",
+  "top-right": "top-[20%] right-[20%] md:top-[20%] md:right-[20%]",
+  "bottom-left": "bottom-[20%] left-[20%] md:bottom-[20%] md:left-[20%]",
+  "bottom-right": "bottom-[20%] right-[20%] md:bottom-[20%] md:right-[20%]",
+}
 
   const labelPositionClasses = {
     "top-left": "top-full left-1/2 -translate-x-1/2 mt-2",
