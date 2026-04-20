@@ -222,48 +222,46 @@ export function AboutMeSection() {
         className="relative w-full bg-background overflow-hidden pb-24 md:pb-36 px-6 md:px-10 lg:px-16"
       >
         {/* ── Section label + bio text — full width header above the grid ── */}
-       <div className="hidden md:flex max-w-[1440px] mx-auto mb-12 md:mb-16 flex-col md:items-center md:justify-center gap-8 md:gap-16">
-         <ScrollReveal delay={0} direction="none">
-          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground/40">About</p>
-          </ScrollReveal>
-            <div className="flex flex-col md:flex-row gap-5 md:gap-10 text-muted-foreground text-sm md:text-[15px] leading-relaxed max-w-[600px]">
-              <p>
-                Tajae Y. Hutchinson is a multidisciplinary creative — an artist,
-                producer, and solution-architect who moves between visual art,
-                sound, and strategy. Her work lives at the intersection of
-                identity, culture, and expression.
-              </p>
-              <p>
-                Rooted in bold aesthetics and intentional storytelling, every
-                project is a conversation — one that asks hard questions and
-                refuses easy answers.
-              </p>
-            </div>
-            <div className="flex flex-wrap items-center gap-6 mt-7">
-              <Link
-                href="/builds"
-                <ScrollReveal delay={0} direction="none">
-          {/* Bio block — sits close to the left, spanning roughly 3 cols worth */}
-          <ScrollReveal delay={80} direction="up" className="md:max-w-[680px] md:mr-auto md:ml-0">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground text-balance leading-[1.05] mb-6">
-              The person<br className="hidden md:block" /> behind the work.
-            </h2>
-                className="inline-flex items-center gap-2 text-muted-foreground text-sm tracking-widest uppercase border-b border-border/40 pb-1 w-fit hover:text-primary hover:border-primary/40 transition-colors duration-300"
-              >
-                Builds
-                <span aria-hidden="true" className="text-xs">→</span>
-              </Link>
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 text-primary text-sm tracking-widest uppercase border-b border-primary/40 pb-1 w-fit hover:border-primary transition-colors duration-300"
-              >
-                Work with me
-                <span aria-hidden="true" className="text-xs">→</span>
-              </Link>
-            </div>
-          </ScrollReveal>
-        </div>
+      <div className="hidden md:flex max-w-[1440px] mx-auto mb-12 md:mb-16 flex-col md:items-center md:justify-center gap-8 md:gap-16">
+  <ScrollReveal delay={0} direction="none">
+    <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground/40">About</p>
+  </ScrollReveal>
 
+  <ScrollReveal delay={80} direction="up" className="md:max-w-[680px] md:mr-auto md:ml-0">
+    <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground text-balance leading-[1.05] mb-6">
+      The person<br className="hidden md:block" /> behind the work.
+    </h2>
+    <div className="flex flex-col md:flex-row gap-5 md:gap-10 text-muted-foreground text-sm md:text-[15px] leading-relaxed max-w-[600px]">
+      <p>
+        Tajae Y. Hutchinson is a multidisciplinary creative — an artist,
+        producer, and solution-architect who moves between visual art,
+        sound, and strategy. Her work lives at the intersection of
+        identity, culture, and expression.
+      </p>
+      <p>
+        Rooted in bold aesthetics and intentional storytelling, every
+        project is a conversation — one that asks hard questions and
+        refuses easy answers.
+      </p>
+    </div>
+    <div className="flex flex-wrap items-center gap-6 mt-7">
+      <Link
+        href="/builds"
+        className="inline-flex items-center gap-2 text-muted-foreground text-sm tracking-widest uppercase border-b border-border/40 pb-1 w-fit hover:text-primary hover:border-primary/40 transition-colors duration-300"
+      >
+        Builds
+        <span aria-hidden="true" className="text-xs">→</span>
+      </Link>
+      <Link
+        href="/contact"
+        className="inline-flex items-center gap-2 text-primary text-sm tracking-widest uppercase border-b border-primary/40 pb-1 w-fit hover:border-primary transition-colors duration-300"
+      >
+        Work with me
+        <span aria-hidden="true" className="text-xs">→</span>
+      </Link>
+    </div>
+  </ScrollReveal>
+</div>
         {/* ── Desktop: 5-column asymmetrical masonry grid ── */}
         <div className="hidden md:grid grid-cols-[1fr_1.5fr_1.4fr_1.4fr_1.5fr] gap-3 lg:gap-4 items-start max-w-[1440px] mx-auto">
 
