@@ -222,7 +222,7 @@ export function AboutMeSection() {
         className="relative w-full bg-background overflow-hidden pb-24 md:pb-36 px-6 md:px-10 lg:px-16"
       >
         {/* ── Section label + bio text — full width header above the grid ── */}
-       <div className="hidden md:flex max-w-[1440px] mx-auto mb-12 md:mb-16 flex-col md:items-end md:justify-between gap-8 md:gap-16">
+       <div className="hidden md:flex max-w-[1440px] mx-auto mb-12 md:mb-16 flex-col md:items-center md:justify-center gap-8 md:gap-16">
           <ScrollReveal delay={0} direction="none">
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground/40">About</p>
           </ScrollReveal>
