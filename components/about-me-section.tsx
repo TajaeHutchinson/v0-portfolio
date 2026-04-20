@@ -368,7 +368,7 @@ export function AboutMeSection() {
             </div>
           </ScrollReveal>
 
-          <div className="grid grid-cols-2 gap-3 mt-2">
+         <div className="hidden grid grid-cols-2 gap-3 mt-2">
             {ALL_IMAGES.filter((img) => !img.isHero).map((img, i) => (
               <ScrollReveal key={img.src + i} delay={i * 55} direction="up">
                 <ImageTile src={img.src} alt={img.alt} aspect={img.aspect} sizes="45vw" />
