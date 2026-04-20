@@ -222,7 +222,7 @@ export function AboutMeSection() {
         className="relative w-full bg-background overflow-hidden pb-24 md:pb-36 px-6 md:px-10 lg:px-16"
       >
         {/* ── Section label + bio text — full width header above the grid ── */}
-        <div className="hidden md:flex max-w-[1440px] mx-auto mb-12 md:mb-16 flex-col md:flex-row md:items-end md:justify-between gap-8 md:gap-16">
+       <div className="hidden md:flex max-w-[1440px] mx-auto mb-12 md:mb-16 flex-col md:items-end md:justify-between gap-8 md:gap-16">
           <ScrollReveal delay={0} direction="none">
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground/40">About</p>
           </ScrollReveal>
@@ -247,17 +247,17 @@ export function AboutMeSection() {
             </div>
             <div className="flex flex-wrap items-center gap-6 mt-7">
               <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 text-primary text-sm tracking-widest uppercase border-b border-primary/40 pb-1 w-fit hover:border-primary transition-colors duration-300"
-              >
-                Work with me
-                <span aria-hidden="true" className="text-xs">→</span>
-              </Link>
-              <Link
                 href="/builds"
                 className="inline-flex items-center gap-2 text-muted-foreground text-sm tracking-widest uppercase border-b border-border/40 pb-1 w-fit hover:text-primary hover:border-primary/40 transition-colors duration-300"
               >
                 Builds
+                <span aria-hidden="true" className="text-xs">→</span>
+              </Link>
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 text-primary text-sm tracking-widest uppercase border-b border-primary/40 pb-1 w-fit hover:border-primary transition-colors duration-300"
+              >
+                Work with me
                 <span aria-hidden="true" className="text-xs">→</span>
               </Link>
             </div>
