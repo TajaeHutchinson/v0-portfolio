@@ -93,7 +93,8 @@ export function BuildsPageContent() {
                       alt={`${build.title} preview`}
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover object-top grayscale-0 group-hover:scale-[1.03] transition-all duration-500"
+                      unoptimized
+                 className="object-cover object-top grayscale-0 group-hover:scale-[1.03] transition-all duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
                   </div>
