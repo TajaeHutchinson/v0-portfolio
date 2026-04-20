@@ -61,12 +61,12 @@ export function BuildsPageContent() {
           <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground/40 mb-4">
             Experiments &amp; Prototypes
           </p>
-          <h2 className="text-4xl md:text-6xl font-bold tracking-tight text-balance leading-[1.05] mb-6">
-            Things I built<br className="hidden md:block" />
-          </h2>
-          <p className="text-muted-foreground text-base md:text-lg leading-relaxed max-w-xl text-pretty">
-            Prototypes and proof-of-concept experiments.
-          </p>
+          <h2 className="text-4xl md:text-6xl font-bold tracking-tight text-balance leading-[1.85] mb-6">
+  Prototypes, Documentation & Versioning.
+</h2>
+<p className="text-muted-foreground text-base md:text-lg leading-relaxed max-w-xl">
+  Sharing concepts that became systems. Below are documented projects showcasing real use cases for artists, creatives and agentic builders.
+</p>
         </div>
       </section>
 
