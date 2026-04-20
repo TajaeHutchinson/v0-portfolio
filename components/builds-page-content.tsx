@@ -62,11 +62,10 @@ export function BuildsPageContent() {
             Experiments &amp; Prototypes
           </p>
           <h2 className="text-4xl md:text-6xl font-bold tracking-tight text-balance leading-[1.05] mb-6">
-            Things I built<br className="hidden md:block" /> to prove a point.
+            Things I built<br className="hidden md:block" />
           </h2>
           <p className="text-muted-foreground text-base md:text-lg leading-relaxed max-w-xl text-pretty">
-            Fast prototypes, hackathon submissions, and proof-of-concept experiments. These
-            are ideas in motion — built quickly, built intentionally.
+            Prototypes and proof-of-concept experiments.
           </p>
         </div>
       </section>
