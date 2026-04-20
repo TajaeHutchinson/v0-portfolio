@@ -342,7 +342,7 @@ export function AboutMeSection() {
               <p className="text-muted-foreground leading-relaxed text-sm">
                 Tajae Y. Hutchinson is a multidisciplinary creative — an artist,
                 producer, and solution-architect who moves between visual art,
-                sound, and strategy.
+                sound, and strategy. Her work lives at the intersection of identity, culture, and expression.
               </p>
               <p className="text-muted-foreground leading-relaxed text-sm">
                 Rooted in bold aesthetics and intentional storytelling, every
