@@ -7,7 +7,7 @@ import { AboutSection } from "./about-section"
 
 export function HeroSection() {
   return (
-    <section className="relative w-full min-h-screen flex flex-col items-center justify-center overflow-hidden py-32 md:py-20">
+    <section className="relative w-full min-h-screen flex flex-col items-center justify-center overflow-hidden py-40 md:py-20">
       {/* Subtle background gradient */}
       <div className="absolute inset-0 bg-gradient-radial from-primary/5 via-transparent to-transparent" />
       
