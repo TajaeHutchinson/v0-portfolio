@@ -240,7 +240,7 @@ export function AboutMeSection() {
       </p>
       <p>
         Rooted in intentional storytelling, every
-        project is a conversation — one that asks hard questions and
+        project is a conversation, one that asks hard questions and
         refuses easy answers.
       </p>
     </div>
