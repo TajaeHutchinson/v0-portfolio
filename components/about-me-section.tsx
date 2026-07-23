@@ -239,7 +239,7 @@ export function AboutMeSection() {
         identity, culture, and expression.
       </p>
       <p>
-        Rooted in bold aesthetics and intentional storytelling, every
+        Rooted in intentional storytelling, every
         project is a conversation — one that asks hard questions and
         refuses easy answers.
       </p>
